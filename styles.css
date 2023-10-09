@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#myButton,
+        #myButton2,
+        #myButton3,
+        #myButton4 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF; /* Background color */
+            color: #fff; /* Text color */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth hover effect */
+            margin: 5px; /* Add some margin between buttons */
+        }
+
+        /* Hover effect - change background color on hover */
+        #myButton:hover,
+        #myButton2:hover,
+        #myButton3:hover,
+        #myButton4:hover {
+            background-color: #0056b3; /* New background color on hover */
+        }
+.rotate {
+    transform: rotate(360deg);
+    transition: transform 1s;
+}
+.scale {
+    transform: scale(1.5);
+    transition: transform 1s;
+}
+.color-change-container {
+    display: inline-block;
+    overflow: hidden;
+}
+.color-change {
+    animation: colorChange 2s ease infinite;
+}
+
+.color-change h1 {
+    text-align: center;
+    margin: 0;
+}
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
